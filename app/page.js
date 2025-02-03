@@ -35,7 +35,6 @@ export default function Home() {
         <>
           <p>Welcome, {session.user.name}</p>
           <button onClick={handleLogout}>Sign Out</button>
-          <button onClick={callApi}>Call Protected API</button>
         </>
       ) : (
         <button onClick={() => signIn('keycloak')}>Sign In</button>
